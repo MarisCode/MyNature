@@ -1,0 +1,331 @@
+* {
+    box-sizing: border-box; /* Paddings, borders and margins are included to the size of an element */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    background-image: url("gallery/virginforest.jpg");
+    font-size: 100%;
+    color:rgb(1, 22, 1);
+}
+
+
+/* The area where all the content is shown */
+.content {
+    width: 60%;
+    margin: auto;
+    background-color: rgb(90, 141, 88);
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* The area of the header */
+.header {
+    height: 200px;
+    width: 100%;
+}
+
+.logo_bg {
+    background-color:rgb(6, 54, 4); /* if the browser doesn't support gradient */
+    background-image: radial-gradient(circle, rgb(224, 241, 225), rgb(75, 156, 81), rgb(21, 88, 18), rgb(10, 65, 8), rgb(10, 65, 8), rgb(10, 65, 8));
+    height: 100%;
+    width: 20%;
+    float: left;
+    font-family: 'Megrim', cursive, serif;
+}
+
+.header-text {
+    height: 79%;
+    line-height: 158px;
+    width: 80%;
+    float: left;
+    font-family: 'Charm', cursive;
+    font-size: 2.5em;
+    font-weight: 400;
+    background-color: rgb(9, 112, 22); /* if the browser doesn't support gradient */
+    background-image: linear-gradient(150deg, rgb(10, 65, 8), rgb(10, 65, 8), rgb(75, 156, 81)); 
+}
+
+.topnav {
+    height: 21%;
+    width: 80%;
+    float: left;
+    background-color:rgb(6, 54, 4);
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    height: 100%;
+    padding: 9px 20px;
+    font-family: 'IM Fell English SC', serif;
+    font-size: 1.2em;
+    color:rgb(224, 241, 225);
+    text-align: center;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color:  rgb(14, 71, 11);
+}
+
+.topnav a.active {
+    background-color: rgb(16, 81, 13);
+    color: rgb(224, 241, 225);
+}
+
+
+/* Footer */
+.footer {
+    
+    font-family: 'IM Fell English SC', serif;
+    text-align: center;
+    line-height: 42px;
+    width: 100%;
+    height: 42px;
+    margin: auto;
+    background-color: rgb(9, 112, 22); /* if the browser doesn't support gradients */
+    background-image: linear-gradient(90deg, rgb(25, 104, 21), rgb(75, 156, 81), rgb(224, 241, 225));
+}
+
+
+/* Everything else but header & footer */
+.column-container {
+    display: table;
+    width: 100%;
+}
+
+.column {
+    display: table-cell;
+    padding: 30px 10px;
+}
+
+.float {
+    float: left;
+}
+
+.column.side {
+    width: 20%;
+    padding: 50px 20px;
+    background-color: rgb(9, 112, 22); /* if the browser don't support gradients */
+    background-image: linear-gradient(130deg, rgb(10, 65, 8), rgb(10, 65, 8), rgb(75, 156, 81)); 
+    vertical-align: top;
+}
+
+p.sidetalk {
+    font-family: 'IM Fell English SC', serif;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.column.main {
+    width: 80%;
+    text-align: center;
+}
+
+.media {
+    width: 95%;
+}
+
+
+/* Image gallery*/
+.gallery.horizontal {
+    width: 32%;
+    margin: 4px;
+}
+
+.gallery.vertical {
+    width: 24%;
+    margin: 3px;
+}
+
+.gallery.horizontal img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(6, 54, 4);
+}
+
+.gallery.vertical img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(6, 54, 4);
+}
+
+
+/* Embedded video */
+.video {
+    width: 750px;
+    height: 422px;
+}
+
+
+/* Thank you -letter */
+.letter {
+    width: 60%;
+    background-color: rgb(221, 221, 199);
+    margin: auto;
+    padding: 15px 30px;
+}
+
+.letter p, .letter h3 {
+    text-align: center;
+    font-family: 'Charm', cursive;
+    font-size: 1.2em;
+    color: rgb(6, 54, 4);
+    margin: 15px 0;
+}
+
+.heart {
+    color: rgb(185, 14, 14);
+}
+
+
+/* The form for stories */
+form {
+    width: 80%;
+    font-family: Garamond, Georgia, serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: left;
+    padding: 10px;
+}
+
+fieldset {
+    margin-bottom: 30px;
+    border: 2px solid rgb(6, 54, 4);
+    border-radius: 7px;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 2px 5px;
+    border: 2px solid rgb(6, 54, 4);
+    border-radius: 7px;
+    background-color: rgb(114, 160, 113);
+}
+
+.short_label {
+    display: inline-block;
+    width: 15%;
+}
+
+#name, #age, #message {
+    padding: 3px;
+    background-color: rgb(224, 241, 225);
+    border: 1px solid rgb(6, 54, 4);
+    border-radius: 5px;
+    width: 75%;
+}
+
+#message {
+    width: 100%;
+    height: 300px;
+}
+
+input[type=submit] {
+    background-color:rgb(6, 54, 4);
+    border: none;
+    border-radius: 5px;
+    color: rgb(224, 241, 225);
+    padding: 7px 16px;
+    text-decoration: none;
+    font-family: Garamond, Georgia, serif;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.attention {
+    text-align: left;
+    font-family: Garamond, Georgia, serif;
+}
+
+
+/* Link page */
+img.linklogo {
+    height: 47px;
+}
+
+.logoimg {
+    display:block;
+    margin: auto;
+    text-align: center;
+}
+
+p.text {
+    font-family: Garamond, Georgia, serif;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 10px 60px 30px;
+    margin: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media only screen and (max-width: 1625px) {
+    .content {
+        width: 70%;
+    }
+    .gallery.horizontal {
+        width: 31%;
+        margin: 5px;
+    }
+    .gallery.vertical {
+        width: 23%;
+        margin: 4.7px;
+    }
+    .video {
+        width: 750px;
+        height: 422px;
+    }
+}
+
+@media only screen and (max-width: 1395px) { /*content levennetty ylemmäs, pitäskö nyt leventää vielä vai pienentää elementtejä?*/
+    .content {
+        width: 80%;
+    }
+    .header {
+        height: 180px;
+    }
+    .logo {
+        max-width: 100%;
+    }
+    .header-text {
+        height: 138px;
+        line-height: 138px;
+        font-size: 2.4em;
+    }
+    
+    .topnav a {
+        padding: 9px 18px;
+        font-size: 1.1em;
+        color:rgb(224, 241, 225);
+    }
+    .video {
+        width: 700px;
+        height: 394px;
+    }
+}
+
+
+@media only screen and (max-width: 1140px) {
+    .content {
+        width: 90%;
+    }
+    p.sidetalk {
+        font-size: 1.2em;
+    }
+    .video {
+        width: 650px;
+        height: 366px;
+    }
+}
